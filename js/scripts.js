@@ -12,5 +12,23 @@ $(document).ready(function () {
             $('#carouselButton').children('span').addClass('fa-pause')
         }
     });
+    $("#myLogin").click(function () {
+        $('#loginModal').modal('toggle')
+    });
+    $("#myReserve").click(function () {
+        $('#reserveModal').modal('toggle')
+    });
+    $("#loginModal").on('shown.bs.modal', function () {
+        $('#exampleInputEmail3').focus()
+
+    });
+    $("#reserveModal").on('shown.bs.modal', function () {
+        $('#nguests3').focus()
+
+    });
+    $('#peterhead1').click(function () {
+        $('#peter').collapse('toggle')
+    })
+    
 
 });
